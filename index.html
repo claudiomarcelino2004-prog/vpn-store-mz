@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="pt">
 <head>
 <meta charset="UTF-8"/>
@@ -22,26 +22,21 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;min-height:100vh;overflow-x:hidden}
-
-/* BG EFFECTS */
 body::before{content:'';position:fixed;top:-200px;left:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(0,212,255,0.06) 0%,transparent 70%);pointer-events:none;z-index:0}
 body::after{content:'';position:fixed;bottom:-200px;right:-200px;width:500px;height:500px;background:radial-gradient(circle,rgba(0,136,255,0.05) 0%,transparent 70%);pointer-events:none;z-index:0}
 
-/* SPLASH */
 #splash{position:fixed;inset:0;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:999;gap:12px}
 .splash-title{font-family:'Bebas Neue',sans-serif;font-size:3em;letter-spacing:4px;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .splash-bar{width:180px;height:2px;background:var(--border);border-radius:4px;overflow:hidden;margin-top:8px}
 .splash-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:4px;animation:fill 2s ease forwards}
 @keyframes fill{from{width:0}to{width:100%}}
 
-/* NAV */
 nav{background:rgba(6,8,16,0.95);border-bottom:1px solid var(--border);padding:14px 18px;position:sticky;top:0;z-index:100;display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(20px)}
 .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.3em;letter-spacing:3px;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .nav-right{display:flex;gap:8px;align-items:center}
 .nav-badge{background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.3);border-radius:20px;padding:5px 12px;font-size:0.78em;color:var(--accent);font-weight:600}
 .btn-admin-nav{background:transparent;border:1px solid var(--border);color:var(--muted2);padding:7px 14px;border-radius:8px;font-size:0.8em;cursor:pointer;font-family:'Outfit',sans-serif}
 
-/* HERO */
 .hero{padding:48px 20px 40px;text-align:center;position:relative;z-index:1}
 .hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(0,255,136,0.08);border:1px solid rgba(0,255,136,0.25);border-radius:30px;padding:7px 16px;font-size:0.82em;color:var(--green);font-weight:600;margin-bottom:20px}
 .hero-tag::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 1.5s infinite}
@@ -53,14 +48,12 @@ nav{background:rgba(6,8,16,0.95);border-bottom:1px solid var(--border);padding:1
 .btn-hero{display:block;width:100%;padding:16px;background:linear-gradient(135deg,var(--accent),var(--accent2));border:none;border-radius:12px;color:#000;font-size:1em;font-weight:800;cursor:pointer;font-family:'Outfit',sans-serif;letter-spacing:0.5px;margin-bottom:10px}
 .btn-hero-out{display:block;width:100%;padding:14px;background:transparent;border:1px solid var(--border);border-radius:12px;color:var(--muted2);font-size:0.95em;font-weight:500;cursor:pointer;font-family:'Outfit',sans-serif}
 
-/* STATS */
 .stats{display:grid;grid-template-columns:1fr 1fr 1fr;border-top:1px solid var(--border);border-bottom:1px solid var(--border);position:relative;z-index:1}
 .stat{padding:18px 8px;text-align:center;border-right:1px solid var(--border)}
 .stat:last-child{border-right:none}
 .stat-n{font-family:'Bebas Neue',sans-serif;font-size:1.8em;letter-spacing:2px;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .stat-l{font-size:0.68em;color:var(--muted);margin-top:2px}
 
-/* OPERATOR TABS */
 .ops-section{padding:36px 20px;position:relative;z-index:1}
 .ops-title{font-family:'Bebas Neue',sans-serif;font-size:1.8em;letter-spacing:2px;margin-bottom:6px}
 .ops-sub{font-size:0.85em;color:var(--muted2);margin-bottom:20px}
@@ -69,7 +62,6 @@ nav{background:rgba(6,8,16,0.95);border-bottom:1px solid var(--border);padding:1
 .op-tab.active{border-color:var(--accent);background:rgba(0,212,255,0.08);color:var(--accent)}
 .op-tab .op-dot{width:8px;height:8px;border-radius:50%;background:var(--green)}
 
-/* VPN CARDS */
 .vpn-grid{display:grid;gap:12px}
 .vpn-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:all 0.2s}
 .vpn-card:hover{border-color:rgba(0,212,255,0.3)}
@@ -89,7 +81,6 @@ nav{background:rgba(6,8,16,0.95);border-bottom:1px solid var(--border);padding:1
 .btn-buy{width:100%;padding:13px;background:linear-gradient(135deg,var(--accent),var(--accent2));border:none;border-radius:10px;color:#000;font-weight:800;font-size:0.88em;cursor:pointer;font-family:'Outfit',sans-serif}
 .btn-buy-free{width:100%;padding:13px;background:rgba(0,255,136,0.1);border:1px solid rgba(0,255,136,0.3);border-radius:10px;color:var(--green);font-weight:700;font-size:0.88em;cursor:pointer;font-family:'Outfit',sans-serif}
 
-/* HOW IT WORKS */
 .how-sec{padding:36px 20px;background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);position:relative;z-index:1}
 .how-steps{display:grid;gap:14px;margin-top:20px}
 .how-step{display:flex;gap:16px;align-items:flex-start}
@@ -97,7 +88,6 @@ nav{background:rgba(6,8,16,0.95);border-bottom:1px solid var(--border);padding:1
 .step-title{font-weight:700;font-size:0.92em;margin-bottom:4px}
 .step-desc{font-size:0.82em;color:var(--muted2);line-height:1.6}
 
-/* CTA */
 .cta{padding:48px 20px;text-align:center;position:relative;z-index:1}
 .cta-h2{font-family:'Bebas Neue',sans-serif;font-size:2.2em;letter-spacing:2px;margin-bottom:12px}
 .cta-h2 span{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
@@ -105,7 +95,6 @@ nav{background:rgba(6,8,16,0.95);border-bottom:1px solid var(--border);padding:1
 
 footer{border-top:1px solid var(--border);padding:20px;text-align:center;font-size:0.75em;color:var(--muted);position:relative;z-index:1}
 
-/* MODAL */
 .modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:200;align-items:flex-end;justify-content:center}
 .modal-bg.open{display:flex}
 .modal{background:var(--surface);border:1px solid var(--border);border-top:2px solid var(--accent);border-radius:20px 20px 0 0;padding:20px;width:100%;max-width:480px;max-height:92vh;overflow-y:auto}
@@ -114,19 +103,16 @@ footer{border-top:1px solid var(--border);padding:20px;text-align:center;font-si
 .modal-sub{font-size:0.82em;color:var(--muted2);margin-bottom:18px}
 .close-x{float:right;background:none;border:none;color:var(--muted);font-size:1.2em;cursor:pointer;margin-top:-24px}
 
-/* PAYMENT STEPS */
 .steps{display:flex;justify-content:center;gap:6px;margin-bottom:18px}
 .sdot{width:8px;height:8px;border-radius:50%;background:var(--border);transition:all 0.3s}
 .sdot.active{background:var(--accent);transform:scale(1.3)}
 .sdot.done{background:var(--green)}
 
-/* VPN SELECTED CARD */
 .sel-vpn{background:var(--surface2);border:1px solid rgba(0,212,255,0.2);border-radius:12px;padding:14px;margin-bottom:16px;display:flex;justify-content:space-between;align-items:center}
 .sel-vpn-name{font-weight:700;font-size:0.92em}
 .sel-vpn-app{font-size:0.75em;color:var(--muted2)}
 .sel-vpn-price{font-family:'Bebas Neue',sans-serif;font-size:1.4em;color:var(--yellow)}
 
-/* METHOD */
 .meth-g{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
 .meth-c{border:2px solid var(--border);border-radius:12px;padding:14px;text-align:center;cursor:pointer;background:var(--bg);transition:all 0.2s}
 .meth-c.sel{border-color:var(--green);background:rgba(0,255,136,0.05)}
@@ -141,28 +127,24 @@ footer{border-top:1px solid var(--border);padding:20px;text-align:center;font-si
 .err{font-size:0.8em;color:var(--red);margin-bottom:8px;display:none}
 .err.show{display:block}
 
-/* SPINNER */
 .spin{display:inline-flex;gap:6px}
 .spin span{width:10px;height:10px;border-radius:50%;background:var(--accent);animation:sp 1.2s infinite}
 .spin span:nth-child(2){animation-delay:0.2s}
 .spin span:nth-child(3){animation-delay:0.4s}
 @keyframes sp{0%,80%,100%{transform:scale(0.6);opacity:0.4}40%{transform:scale(1);opacity:1}}
 
-/* DOWNLOAD CARD */
 .dl-card{background:rgba(0,255,136,0.05);border:1px solid rgba(0,255,136,0.2);border-radius:12px;padding:16px;margin-bottom:16px;text-align:center}
 .dl-icon{font-size:2.5em;margin-bottom:8px}
 .dl-name{font-weight:700;margin-bottom:4px}
 .dl-meta{font-size:0.78em;color:var(--muted2);margin-bottom:14px}
 .btn-dl{width:100%;padding:14px;background:linear-gradient(135deg,var(--green),#00cc66);border:none;border-radius:10px;color:#000;font-weight:900;font-size:0.92em;cursor:pointer;font-family:'Outfit',sans-serif;display:flex;align-items:center;justify-content:center;gap:8px}
 
-/* ADMIN */
-.admin-section{display:none}
 .inp-sm{width:100%;padding:12px;background:var(--bg);border:1px solid var(--border);border-radius:8px;color:var(--text);font-family:'Outfit',sans-serif;font-size:0.9em;outline:none;margin-bottom:10px}
 label{display:block;font-size:0.78em;color:var(--muted2);margin-bottom:4px}
 .btn-green-sm{padding:10px 16px;background:rgba(0,255,136,0.1);border:1px solid var(--green);border-radius:8px;color:var(--green);font-size:0.82em;cursor:pointer;font-family:'Outfit',sans-serif}
 .btn-red-sm{padding:10px 16px;background:rgba(255,59,92,0.1);border:1px solid var(--red);border-radius:8px;color:var(--red);font-size:0.82em;cursor:pointer;font-family:'Outfit',sans-serif}
 
-.toast{position:fixed;bottom:80px;right:16px;background:var(--accent);color:#000;padding:10px 18px;border-radius:10px;font-size:0.85em;z-index:999;display:none;font-weight:700}
+.toast{position:fixed;bottom:80px;right:16px;background:var(--accent);color:#000;padding:10px 18px;border-radius:10px;font-size:0.85em;z-index:9999;display:none;font-weight:700}
 </style>
 </head>
 <body>
@@ -264,478 +246,29 @@ label{display:block;font-size:0.78em;color:var(--muted2);margin-bottom:4px}
 
 <footer>© 2025 VPN Store MZ · Todos os direitos reservados · +258 847 888 166</footer>
 
-<!-- PAYMENT MODAL -->
+<!-- ═══ PAYMENT MODAL ═══ -->
 <div class="modal-bg" id="payModal">
   <div class="modal">
     <div class="modal-handle"></div>
     <button class="close-x" onclick="closePay()">✕</button>
-    <div class="steps"><div class="sdot active" id="sd1"></div><div class="sdot" id="sd2"></div><div class="sdot" id="sd3"></div></div>
+    <div class="steps">
+      <div class="sdot active" id="sd1"></div>
+      <div class="sdot" id="sd2"></div>
+      <div class="sdot" id="sd3"></div>
+    </div>
 
-    <!-- S1: Método + Número -->
+    <!-- STEP 1: Método + Número -->
     <div id="pS1">
       <div class="modal-title">COMPRAR VPN</div>
       <div class="modal-sub">Pagamento rápido e seguro</div>
-      <div class="sel-vpn" id="selVpnCard">
-        <div><div class="sel-vpn-name" id="selVpnName">—</div><div class="sel-vpn-app" id="selVpnApp">—</div></div>
+      <div class="sel-vpn">
+        <div>
+          <div class="sel-vpn-name" id="selVpnName">—</div>
+          <div class="sel-vpn-app" id="selVpnApp">—</div>
+        </div>
         <div class="sel-vpn-price">20 <small style="font-family:'Outfit';font-size:0.5em;color:var(--muted);">MZN</small></div>
       </div>
-      <span class="lbl">📱 Método de pagamento</span>
+      <div class="lbl">Método de pagamento</div>
       <div class="meth-g">
         <div class="meth-c" id="mc_mpesa" onclick="selMeth('mpesa')">
-          <div class="meth-ico" style="background:linear-gradient(135deg,#e11d48,#be123c);">M-P</div>
-          <div style="font-weight:700;font-size:0.9em;">M-PESA</div>
-          <div style="font-size:0.72em;color:var(--muted);">Vodacom</div>
-        </div>
-        <div class="meth-c" id="mc_emola" onclick="selMeth('emola')">
-          <div class="meth-ico" style="background:linear-gradient(135deg,#059669,#047857);">EM</div>
-          <div style="font-weight:700;font-size:0.9em;">E-MOLA</div>
-          <div style="font-size:0.72em;color:var(--muted);">Movitel</div>
-        </div>
-      </div>
-      <span class="lbl">📞 O teu número</span>
-      <input class="inp" type="tel" id="payPhone" placeholder="Ex: 84XXXXXXX" oninput="checkPayBtn()"/>
-      <div class="err" id="payErr">⚠️ Preenche todos os campos!</div>
-      <button class="btn-pay" id="btnPay" onclick="concluir()" disabled>✅ CONCLUIR PAGAMENTO</button>
-    </div>
-
-    <!-- S2: Processando -->
-    <div id="pS2" style="display:none;text-align:center;padding:40px 0;">
-      <div class="spin"><span></span><span></span><span></span></div>
-      <div style="font-family:'Bebas Neue';font-size:1.2em;letter-spacing:2px;color:var(--accent);margin-top:16px;">A PROCESSAR...</div>
-      <div style="color:var(--muted2);font-size:0.82em;margin-top:8px;">A preparar o teu pedido...</div>
-    </div>
-
-    <!-- S3: WhatsApp -->
-    <div id="pS3" style="display:none;text-align:center;padding:10px 0;">
-      <div style="font-size:3em;margin-bottom:10px;">💬</div>
-      <div class="modal-title" style="color:#25D366;">FINALIZAR NO WHATSAPP</div>
-      <div style="color:var(--muted2);font-size:0.84em;margin:8px 0 20px;line-height:1.7;">Clica abaixo para enviar o comprovativo.<br><strong style="color:var(--text);">Download liberado em minutos! ⚡</strong></div>
-      <div style="background:rgba(0,212,255,0.05);border:1px solid rgba(0,212,255,0.15);border-radius:12px;padding:14px;margin-bottom:18px;">
-        <div style="font-size:0.78em;color:var(--muted2);">O teu pedido:</div>
-        <div id="waPlanTxt" style="font-weight:800;color:var(--yellow);font-size:1em;margin-top:4px;"></div>
-      </div>
-      <a id="waBtn" href="#" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:16px;background:linear-gradient(135deg,#25D366,#128C7E);border-radius:14px;color:#fff;font-weight:900;text-decoration:none;font-size:0.95em;">
-        <svg width="20" height="20" viewBox="0 0 32 32" fill="white"><path d="M16 0C7.163 0 0 7.163 0 16c0 2.833.738 5.49 2.031 7.807L0 32l8.418-2.004A15.94 15.94 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 01-6.79-1.862l-.487-.29-5.002 1.191 1.22-4.865-.317-.5A13.267 13.267 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.862c-.398-.199-2.354-1.162-2.72-1.294-.365-.133-.631-.199-.897.199-.266.398-1.03 1.294-1.263 1.56-.232.266-.465.299-.863.1-.398-.2-1.682-.62-3.203-1.977-1.184-1.057-1.983-2.362-2.215-2.76-.232-.398-.025-.613.175-.811.18-.178.398-.465.597-.697.2-.232.266-.398.398-.664.133-.266.067-.498-.033-.697-.1-.199-.897-2.163-1.23-2.961-.323-.779-.652-.673-.897-.686l-.764-.013c-.266 0-.697.1-1.063.498-.365.398-1.395 1.362-1.395 3.326 0 1.963 1.428 3.861 1.627 4.127.2.266 2.81 4.29 6.808 5.818.951.366 1.694.585 2.273.748.955.27 1.824.232 2.511.141.766-.101 2.354-.962 2.687-1.892.332-.93.332-1.727.232-1.893-.1-.166-.365-.266-.763-.465z"/></svg>
-        ABRIR WHATSAPP
-      </a>
-      <button onclick="backS1()" style="width:100%;padding:10px;background:none;border:1px solid var(--border);border-radius:8px;color:var(--muted);font-size:0.8em;cursor:pointer;margin-top:10px;font-family:'Outfit',sans-serif;">← Voltar</button>
-    </div>
-  </div>
-</div>
-
-<!-- ADMIN MODAL -->
-<div class="modal-bg" id="adminModal">
-  <div class="modal">
-    <div class="modal-handle"></div>
-    <button class="close-x" onclick="closeAdmin()">✕</button>
-    <div class="modal-title">PAINEL ADMIN</div>
-    <div class="modal-sub">Gestão de VPNs e pedidos</div>
-    <div id="adminLogin">
-      <input class="inp" type="password" id="adminPw" placeholder="Senha admin" onkeydown="if(event.key==='Enter')loginAdmin()"/>
-      <div id="adminErr" style="font-size:0.8em;color:var(--red);margin-bottom:8px;display:none;">❌ Senha incorrecta!</div>
-      <button class="btn-pay" onclick="loginAdmin()">🔐 ENTRAR</button>
-    </div>
-    <div id="adminPanel" style="display:none;">
-
-      <!-- PEDIDOS -->
-      <div style="font-size:0.82em;font-weight:700;color:var(--accent);margin-bottom:10px;">📦 Pedidos Pendentes</div>
-      <div id="ordersList" style="margin-bottom:14px;"></div>
-
-      <div style="height:1px;background:var(--border);margin-bottom:14px;"></div>
-
-      <!-- ADICIONAR VPN -->
-      <div style="font-size:0.82em;font-weight:700;color:var(--accent);margin-bottom:10px;">➕ Adicionar Nova VPN</div>
-      <label>Nome da VPN</label>
-      <input class="inp-sm" id="newVpnName" placeholder="Ex: Vodacom SSH Ultra"/>
-      <label>App necessária</label>
-      <input class="inp-sm" id="newVpnApp" placeholder="Ex: HX Tunnel, HTTP Injector"/>
-      <label>Operadora</label>
-      <select class="inp-sm" id="newVpnOp" style="cursor:pointer;">
-        <option value="vodacom">Vodacom</option>
-        <option value="movitel">Movitel</option>
-        <option value="tmcel">Tmcel</option>
-      </select>
-      <label>Descrição</label>
-      <input class="inp-sm" id="newVpnDesc" placeholder="Ex: Funciona com modo avião, ilimitado..."/>
-      <label>Link de download (Google Drive, Mega, etc.)</label>
-      <input class="inp-sm" id="newVpnLink" placeholder="https://drive.google.com/..."/>
-      <label>Tags (separadas por vírgula)</label>
-      <input class="inp-sm" id="newVpnTags" placeholder="Ex: Ilimitado, SSH, Rápido"/>
-      <label>É grátis?</label>
-      <select class="inp-sm" id="newVpnFree" style="cursor:pointer;">
-        <option value="no">Não — 20 MZN</option>
-        <option value="yes">Sim — Grátis</option>
-      </select>
-      <button class="btn-pay" onclick="addVpn()" style="margin-bottom:14px;">➕ ADICIONAR VPN</button>
-
-      <div style="height:1px;background:var(--border);margin-bottom:14px;"></div>
-
-      <!-- VPNs ACTUAIS -->
-      <div style="height:1px;background:var(--border);margin-bottom:14px;"></div>
-
-      <!-- GERAR CÓDIGO -->
-      <div style="font-size:0.82em;font-weight:700;color:var(--accent);margin-bottom:10px;">🔑 Gerar Código de Acesso</div>
-      <label>Selecciona a VPN</label>
-      <select class="inp-sm" id="codeVpnSel" style="cursor:pointer;"></select>
-      <button class="btn-pay" onclick="genCode()" style="margin-bottom:6px;">🔑 GERAR CÓDIGO</button>
-      <div id="genCodeOut" style="font-family:monospace;color:var(--green);font-size:1em;font-weight:900;margin-bottom:14px;letter-spacing:2px;"></div>
-
-      <div style="height:1px;background:var(--border);margin-bottom:14px;"></div>
-
-      <!-- CÓDIGOS ACTIVOS -->
-      <div style="font-size:0.82em;font-weight:700;color:var(--accent);margin-bottom:10px;">🔑 Códigos Activos</div>
-      <div id="codesList" style="margin-bottom:14px;max-height:200px;overflow-y:auto;"></div>
-
-      <div style="height:1px;background:var(--border);margin-bottom:14px;"></div>
-
-      <div style="font-size:0.82em;font-weight:700;color:var(--accent);margin-bottom:10px;">📋 VPNs Actuais (<span id="vpnCount">0</span>)</div>
-      <div id="vpnAdminList"></div>
-    </div>
-  </div>
-</div>
-
-<!-- DOWNLOAD MODAL -->
-<div class="modal-bg" id="dlModal">
-  <div class="modal">
-    <div class="modal-handle"></div>
-    <button class="close-x" onclick="document.getElementById('dlModal').classList.remove('open')">✕</button>
-    <div class="modal-title" style="color:var(--green);">DOWNLOAD PRONTO!</div>
-    <div class="modal-sub">O teu ficheiro está pronto para descarregar</div>
-    <div class="dl-card">
-      <div class="dl-icon">📦</div>
-      <div class="dl-name" id="dlVpnName">—</div>
-      <div class="dl-meta" id="dlVpnMeta">—</div>
-      <a id="dlBtn" href="#" target="_blank" class="btn-dl">
-        ⬇️ DESCARREGAR AGORA
-      </a>
-    </div>
-    <div style="background:rgba(0,212,255,0.05);border:1px solid rgba(0,212,255,0.1);border-radius:10px;padding:14px;font-size:0.82em;color:var(--muted2);line-height:1.8;">
-      📱 <strong style="color:var(--text);">Como instalar:</strong><br>
-      1. Descarrega o ficheiro<br>
-      2. Abre a app indicada<br>
-      3. Importa o ficheiro<br>
-      4. Liga e navega grátis! 🚀
-    </div>
-  </div>
-</div>
-
-<div class="toast" id="toast"></div>
-
-<script>
-// ══ CONFIG ══
-const ADMIN_PW = 'VpN@Mz2026#Store!';
-let selMethVal = '', selVpnData = null;
-
-// ══ DEFAULT VPNs ══
-const DEFAULT_VPNS = [
-  {id:1, name:'Vodacom SSH Ultra', app:'HX Tunnel', op:'vodacom', desc:'Configuração SSH de alta velocidade para Vodacom. Funciona com modo avião. Ilimitado!', tags:['Ilimitado','SSH','Rápido'], free:false, link:'https://wa.me/258847888166?text=Quero%20a%20VPN%20Vodacom%20SSH%20Ultra'},
-  {id:2, name:'Vodacom HTTP Free', app:'HTTP Injector', op:'vodacom', desc:'Config HTTP Direct para Vodacom. Fácil de instalar e configurar.', tags:['HTTP','Grátis','Fácil'], free:true, link:'https://wa.me/258847888166?text=Quero%20a%20VPN%20Vodacom%20HTTP%20Free'},
-  {id:3, name:'Movitel SSH Pro', app:'NapsternetV', op:'movitel', desc:'Configuração exclusiva para Movitel/E-mola. SSH tunelado de alta velocidade!', tags:['Ilimitado','SSH','Exclusivo'], free:false, link:'https://wa.me/258847888166?text=Quero%20a%20VPN%20Movitel%20SSH%20Pro'},
-  {id:4, name:'Movitel HTTP Boost', app:'HTTP Injector', op:'movitel', desc:'Config HTTP para Movitel. Boa velocidade para redes sociais e streaming.', tags:['HTTP','Streaming','Rápido'], free:false, link:'https://wa.me/258847888166?text=Quero%20a%20VPN%20Movitel%20HTTP%20Boost'},
-  {id:5, name:'Tmcel SSH Basic', app:'HX Tunnel', op:'tmcel', desc:'Configuração SSH básica para Tmcel. Funciona para navegação e redes sociais.', tags:['SSH','Básico'], free:false, link:'https://wa.me/258847888166?text=Quero%20a%20VPN%20Tmcel%20SSH%20Basic'},
-];
-
-// ══ LOAD VPNs ══
-function getVpns(){
-  try{
-    const saved = localStorage.getItem('vpnstore_vpns');
-    return saved ? JSON.parse(saved) : DEFAULT_VPNS;
-  }catch(e){ return DEFAULT_VPNS; }
-}
-function saveVpns(vpns){ localStorage.setItem('vpnstore_vpns', JSON.stringify(vpns)); }
-
-// ══ SPLASH ══
-function hideSplash(){
-  try {
-    const splash = document.getElementById('splash');
-    if(splash){
-      splash.style.opacity='0';
-      splash.style.transition='opacity 0.5s';
-      setTimeout(()=>{ splash.style.display='none'; },500);
-    }
-  } catch(e){}
-  try { renderVpns('all'); } catch(e){}
-}
-// Multiple fallbacks
-setTimeout(hideSplash, 1800);
-document.addEventListener('DOMContentLoaded', ()=>setTimeout(hideSplash, 1800));
-window.onload = ()=>setTimeout(hideSplash, 1800);
-
-// ══ RENDER VPNs ══
-function renderVpns(op){
-  const vpns = getVpns();
-  const filtered = op==='all' ? vpns : vpns.filter(v=>v.op===op);
-  const opColors = {vodacom:'vtag-red', movitel:'vtag-green', tmcel:'vtag-blue'};
-  const opNames = {vodacom:'Vodacom', movitel:'Movitel', tmcel:'Tmcel'};
-
-  document.getElementById('vpnGrid').innerHTML = filtered.length === 0
-    ? '<div style="text-align:center;padding:40px;color:var(--muted);">Sem VPNs disponíveis para esta operadora</div>'
-    : filtered.map(v=>`
-      <div class="vpn-card">
-        <div class="vpn-card-header">
-          <div>
-            <div class="vpn-name">${v.name}</div>
-            <div class="vpn-app">📱 App: ${v.app}</div>
-          </div>
-          <div style="text-align:right;">
-            <div class="vpn-price">${v.free?'<span style="color:var(--green);font-size:0.7em;">GRÁTIS</span>':'20<small> MZN</small>'}</div>
-          </div>
-        </div>
-        <div class="vpn-card-body">
-          <div class="vpn-tags">
-            <span class="vtag ${opColors[v.op]}">${opNames[v.op]}</span>
-            ${v.tags.map(t=>`<span class="vtag vtag-blue">${t}</span>`).join('')}
-          </div>
-          <div class="vpn-info">${v.desc}</div>
-          ${v.free
-            ? `<button class="btn-buy-free" onclick="freeDownload(${v.id})">⬇️ DESCARREGAR GRÁTIS</button>`
-            : `<button class="btn-buy" onclick="buyVpn(${v.id})">🛒 COMPRAR — 20 MZN</button>`
-          }
-        </div>
-      </div>`).join('');
-}
-
-function filterOp(el, op){
-  document.querySelectorAll('.op-tab').forEach(t=>t.classList.remove('active'));
-  el.classList.add('active');
-  renderVpns(op);
-}
-
-// ══ FREE DOWNLOAD ══
-function freeDownload(id){
-  const vpns = getVpns();
-  const vpn = vpns.find(v=>v.id===id);
-  if(!vpn) return;
-  document.getElementById('dlVpnName').textContent = vpn.name;
-  document.getElementById('dlVpnMeta').textContent = `App: ${vpn.app} · Grátis`;
-  document.getElementById('dlBtn').href = vpn.link;
-  document.getElementById('dlModal').classList.add('open');
-}
-
-// ══ BUY VPN ══
-function buyVpn(id){
-  const vpns = getVpns();
-  const vpn = vpns.find(v=>v.id===id);
-  if(!vpn) return;
-  selVpnData = vpn;
-  document.getElementById('selVpnName').textContent = vpn.name;
-  document.getElementById('selVpnApp').textContent = `App: ${vpn.app}`;
-  document.getElementById('payModal').classList.add('open');
-  setStep(1);
-}
-
-// ══ PAYMENT ══
-function setStep(n){
-  [1,2,3].forEach(i=>{
-    document.getElementById('pS'+i).style.display=i===n?'block':'none';
-    const d=document.getElementById('sd'+i);
-    if(d){d.classList.remove('active','done');if(i<n)d.classList.add('done');if(i===n)d.classList.add('active');}
-  });
-}
-function selMeth(m){
-  selMethVal=m;
-  document.getElementById('mc_mpesa').classList.toggle('sel',m==='mpesa');
-  document.getElementById('mc_emola').classList.toggle('sel',m==='emola');
-  checkPayBtn();
-}
-function checkPayBtn(){
-  const p=document.getElementById('payPhone').value.replace(/\D/g,'');
-  document.getElementById('btnPay').disabled=!(selMethVal&&p.length>=8);
-}
-function concluir(){
-  const phone=document.getElementById('payPhone').value.trim();
-  if(!phone||!selMethVal){document.getElementById('payErr').classList.add('show');return;}
-  document.getElementById('payErr').classList.remove('show');
-  window._phone=phone;
-  setStep(2);
-  setTimeout(()=>{
-    const txt=`${selVpnData.name} · 20 MZN · ${selMethVal.toUpperCase()}`;
-    const msg=encodeURIComponent(`Olá! Quero comprar uma VPN 🌐\n\n📦 VPN: *${selVpnData.name}*\n📱 App: *${selVpnData.app}*\n💰 Valor: *20 MZN*\n📱 Método: *${selMethVal.toUpperCase()}*\n📞 Número: *${phone}*`);
-    setStep(3);
-    setTimeout(()=>{
-      const b=document.getElementById('waBtn'),t=document.getElementById('waPlanTxt');
-      if(b)b.href=`https://wa.me/258847888166?text=${msg}`;
-      if(t)t.textContent=txt;
-    },80);
-  },2500);
-}
-function closePay(){
-  document.getElementById('payModal').classList.remove('open');
-  selMethVal='';selVpnData=null;
-  ['mc_mpesa','mc_emola'].forEach(id=>document.getElementById(id).classList.remove('sel'));
-  document.getElementById('payPhone').value='';
-  document.getElementById('payErr').classList.remove('show');
-  document.getElementById('btnPay').disabled=true;
-  setStep(1);
-}
-function backS1(){ setStep(1); }
-
-// ══ ADMIN ══
-function openAdmin(){ document.getElementById('adminModal').classList.add('open'); }
-function closeAdmin(){
-  document.getElementById('adminModal').classList.remove('open');
-  document.getElementById('adminPanel').style.display='none';
-  document.getElementById('adminLogin').style.display='block';
-  document.getElementById('adminPw').value='';
-  document.getElementById('adminErr').style.display='none';
-}
-function loginAdmin(){
-  if(document.getElementById('adminPw').value===ADMIN_PW){
-    document.getElementById('adminPanel').style.display='block';
-    document.getElementById('adminLogin').style.display='none';
-    loadAdminData();
-  } else {
-    document.getElementById('adminErr').style.display='block';
-    document.getElementById('adminPw').value='';
-  }
-}
-function loadAdminData(){
-  const vpns = getVpns();
-  // Populate VPN select for code generation
-  const sel = document.getElementById('codeVpnSel');
-  if(sel) sel.innerHTML = vpns.map(v=>`<option value="${v.id}">${v.name}</option>`).join('');
-  // Load codes
-  const codes = getCodes();
-  const activeCodes = codes.filter(c=>c.status==='active');
-  document.getElementById('codesList').innerHTML = activeCodes.length===0
-    ? '<div style="color:var(--muted);font-size:0.82em;">Sem códigos activos</div>'
-    : activeCodes.map(c=>`
-      <div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:10px;margin-bottom:6px;display:flex;justify-content:space-between;align-items:center;">
-        <div>
-          <div style="font-family:monospace;color:var(--green);font-size:0.95em;font-weight:900;letter-spacing:2px;">${c.code}</div>
-          <div style="font-size:0.72em;color:var(--muted2);">${c.vpnName}</div>
-        </div>
-        <div style="font-size:0.7em;color:var(--muted);">${c.createdAt}</div>
-      </div>`).join('');
-  // original loadAdminData content below:
-  
-  document.getElementById('vpnCount').textContent = vpns.length;
-
-  // VPN list
-  document.getElementById('vpnAdminList').innerHTML = vpns.map((v,i)=>`
-    <div style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:12px;margin-bottom:8px;">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;">
-        <div>
-          <div style="font-weight:700;font-size:0.88em;">${v.name}</div>
-          <div style="font-size:0.72em;color:var(--muted2);">${v.app} · ${v.op} · ${v.free?'Grátis':'20 MZN'}</div>
-        </div>
-        <button onclick="removeVpn(${v.id})" class="btn-red-sm" style="padding:5px 10px;font-size:0.72em;">🗑</button>
-      </div>
-    </div>`).join('');
-
-  // Orders
-  const orders = JSON.parse(localStorage.getItem('vpnstore_orders')||'[]');
-  const pending = orders.filter(o=>o.status==='pending');
-  document.getElementById('ordersList').innerHTML = pending.length===0
-    ? '<div style="color:var(--muted);font-size:0.82em;padding:8px 0;">Sem pedidos pendentes</div>'
-    : pending.map((o,i)=>`
-      <div style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:12px;margin-bottom:8px;">
-        <div style="font-weight:700;font-size:0.85em;color:var(--yellow);">${o.vpn}</div>
-        <div style="font-size:0.78em;color:var(--muted2);">${o.phone} · ${o.method} · ${o.date}</div>
-        <div style="display:flex;gap:6px;margin-top:8px;">
-          <button onclick="approveOrder(${i})" class="btn-green-sm" style="font-size:0.75em;padding:6px 12px;">✅ Aprovar</button>
-          <button onclick="rejectOrder(${i})" class="btn-red-sm" style="font-size:0.75em;padding:6px 12px;">❌ Rejeitar</button>
-        </div>
-      </div>`).join('');
-}
-// ══ CODES ══
-function getCodes(){ try{ return JSON.parse(localStorage.getItem('vpnstore_codes')||'[]'); }catch(e){ return []; } }
-function saveCodes(codes){ localStorage.setItem('vpnstore_codes', JSON.stringify(codes)); }
-
-function redeemCode(){
-  const code = document.getElementById('codeInp').value.trim().toUpperCase();
-  const errEl = document.getElementById('codeErr');
-  const okEl = document.getElementById('codeOk');
-  errEl.style.display='none'; okEl.style.display='none';
-  if(!code){ errEl.style.display='block'; return; }
-  const codes = getCodes();
-  const idx = codes.findIndex(c=>c.code===code && c.status==='active');
-  if(idx === -1){ errEl.style.display='block'; return; }
-  // Valid code!
-  const codeData = codes[idx];
-  codes[idx].status = 'used';
-  codes[idx].usedAt = new Date().toLocaleString('pt');
-  saveCodes(codes);
-  okEl.style.display='block';
-  document.getElementById('codeInp').value='';
-  // Open download
-  setTimeout(()=>{
-    const vpns = getVpns();
-    const vpn = vpns.find(v=>v.id===codeData.vpnId);
-    if(vpn){
-      document.getElementById('dlVpnName').textContent = vpn.name;
-      document.getElementById('dlVpnMeta').textContent = `App: ${vpn.app}`;
-      document.getElementById('dlBtn').href = vpn.link;
-      document.getElementById('dlModal').classList.add('open');
-    }
-    okEl.style.display='none';
-  }, 1000);
-}
-
-function generateCode(vpnId, vpnName){
-  const code = 'VPN-' + Math.random().toString(36).slice(2,8).toUpperCase();
-  const codes = getCodes();
-  codes.push({code, vpnId, vpnName, status:'active', createdAt: new Date().toLocaleString('pt')});
-  saveCodes(codes);
-  return code;
-}
-
-function addVpn(){
-  const name=document.getElementById('newVpnName').value.trim();
-  const app=document.getElementById('newVpnApp').value.trim();
-  const op=document.getElementById('newVpnOp').value;
-  const desc=document.getElementById('newVpnDesc').value.trim();
-  const link=document.getElementById('newVpnLink').value.trim();
-  const tags=document.getElementById('newVpnTags').value.split(',').map(t=>t.trim()).filter(t=>t);
-  const free=document.getElementById('newVpnFree').value==='yes';
-  if(!name||!app||!desc||!link){showToast('⚠️ Preenche todos os campos!');return;}
-  const vpns=getVpns();
-  const id=Date.now();
-  vpns.push({id,name,app,op,desc,tags,free,link});
-  saveVpns(vpns);
-  ['newVpnName','newVpnApp','newVpnDesc','newVpnLink','newVpnTags'].forEach(id=>document.getElementById(id).value='');
-  showToast('✅ VPN adicionada!');
-  loadAdminData();
-  renderVpns('all');
-}
-function removeVpn(id){
-  const vpns=getVpns().filter(v=>v.id!==id);
-  saveVpns(vpns);
-  showToast('🗑 VPN removida!');
-  loadAdminData();
-  renderVpns('all');
-}
-function approveOrder(i){
-  const orders=JSON.parse(localStorage.getItem('vpnstore_orders')||'[]');
-  const pending=orders.filter(o=>o.status==='pending');
-  if(!pending[i]) return;
-  const idx=orders.findIndex(o=>o.id===pending[i].id);
-  orders[idx].status='approved';
-  localStorage.setItem('vpnstore_orders',JSON.stringify(orders));
-  showToast('✅ Pedido aprovado!');
-  loadAdminData();
-}
-function rejectOrder(i){
-  const orders=JSON.parse(localStorage.getItem('vpnstore_orders')||'[]');
-  const pending=orders.filter(o=>o.status==='pending');
-  const idx=orders.findIndex(o=>o.id===pending[i].id);
-  orders[idx].status='rejected';
-  localStorage.setItem('vpnstore_orders',JSON.stringify(orders));
-  loadAdminData();
-}
-function genCode(){
-  const sel = document.getElementById('codeVpnSel');
-  if(!sel || !sel.value){ showToast('⚠️ Selecciona uma VPN!'); return; }
-  const vpns = getVpns();
-  const vpn = vpns.find(v=>v.id==sel.value);
-  if(!vpn) return;
-  const code = generateCode(parseInt(sel.value), vpn.name);
-  document.getElementById('genCodeOut').textContent = '🔑 ' + code;
-  showToast('✅ Código gerado! Envia ao cliente.');
-  loadAdminData();
-}
-
-function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.style.display='block';setTimeout(()=>t.style.display='none',2500);}
-</script>
-</body>
-</html>
+          <div class="meth-ico" style="background:l
